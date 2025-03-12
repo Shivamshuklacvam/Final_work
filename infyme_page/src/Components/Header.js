@@ -25,7 +25,7 @@ const Header = () => {
       </div>
 
           
-        <div>
+        {/* <div>
           <span >Home &gt; Service store &gt; Portfolio Analytics</span>
           <span>View By:</span>
           <select style={{ marginLeft: "20px"}}>
@@ -33,7 +33,7 @@ const Header = () => {
             <option> Admin</option>
             <option> Admin</option>
           </select>
-        </div>
+        </div> */}
     </div>
   );
 };

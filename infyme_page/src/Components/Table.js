@@ -4,15 +4,13 @@ import "../index.css";
 const Table = () => {
     const [data, setData] = useState([]);
     useEffect(() => {
-      fetch("/data.json")
-        .then((response) => response.json())
+      fetch("/data.json").then((response) => response.json())
         .then((json) => setData(json.assetAdoption));
     }, []);
 
     return(
         <div className="table-container toggle-container container ">
-            <strong>Asset Adoption </strong>
-           
+            <h3>Asset Adoption </h3>
         <table>
           <thead>
             <tr>

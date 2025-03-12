@@ -4,7 +4,7 @@ import "../index.css";
 const Search = () => {
   return (
     <div className="container">
-      <h3>Select Input</h3>
+      <h3 >Select Input</h3>
       <div className="filter-options">
         <div className="filter-item">
           <label>Segment</label>
@@ -22,11 +22,15 @@ const Search = () => {
           <label>Portfolio Head</label>
           <select>
             <option>Select</option>
+            <option>Select</option>
+            <option>Select</option>
           </select>
         </div>
         <div className="filter-item">
           <label>MCO</label>
           <select>
+            <option>Select</option>
+            <option>Select</option>
             <option>Select</option>
           </select>
         </div>

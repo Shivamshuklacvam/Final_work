@@ -1,18 +1,13 @@
-// components/AssetPipeline.js
 import React, { useState, useEffect } from 'react';
+import "../index.css";
 
 const AssetPipeline = () => {
-  const [pipelineData, setPipelineData] = useState();
+  const [pipelineData, setPipelineData] = useState(); 
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Simulate fetching data from a JSON file or API
-    fetch('/pipelineData.json') // Replace with your data source
+    fetch('/pipelineData.json') 
       .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
         return response.json();
       })
       .then(data => {
@@ -20,20 +15,18 @@ const AssetPipeline = () => {
         setLoading(false);
       })
       .catch(error => {
-        setError(error);
         setLoading(false);
+        console.error("Error:", error);
       });
   },);
 
   if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
-
   return (
-    <div style={{ marginTop: '20px' }} className='container'>
-      <h2>View asset pipeline</h2>
+    <div className="container table">
+      <h3>View asset pipeline</h3>
 
-      <div style={{ overflowX: 'auto' }}>
-        <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ddd' }}>
+      <div className="table-container">
+        <table>
           <thead>
             <tr>
               <th>Opportunity ID</th>
@@ -46,13 +39,13 @@ const AssetPipeline = () => {
               <th>Deal winning probability</th>
               <th>Deal stage</th>
               <th>Remark</th>
-              <th>Action</th>
+              <th className="action">Action</th>
             </tr>
           </thead>
           <tbody>
-            {pipelineData.map(item => (
-              <tr key={item.opportunityId} style={{ borderBottom: '1px solid #ddd' }}>
-                <td>{item.opportunityId}</td>
+            {pipelineData.map(item => ( 
+              <tr key={item.opportunityId}>
+                <td className='in-focus'>{item.opportunityId}</td>
                 <td>{item.accountName}</td>
                 <td>{item.assetName}</td>
                 <td>{item.mco}</td>
@@ -62,15 +55,15 @@ const AssetPipeline = () => {
                 <td>{item.dealWinningProbability}</td>
                 <td>{item.dealStage}</td>
                 <td>{item.remark}</td>
-                <td>{item.action}</td>
+                <td className="action fixed"></td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
-      <div style={{ marginTop: '20px' }}>
-        <button style={{ marginRight: '10px' }}>+ Add new pipeline</button>
+      <div>
+        <button>+ Add new pipeline</button>
         <button>Update bulk</button>
       </div>
     </div>
