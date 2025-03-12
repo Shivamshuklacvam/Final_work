@@ -1,0 +1,28 @@
+[
+    {
+      "opportunityId": "1035327",
+      "accountName": "BASFITG",
+      "assetName": "Infosys Cyber Watch Int",
+      "mco": "Aditya Sharma",
+      "ih": "Ruchir Budhwar",
+      "revenue": "0.31",
+      "expectedClosureDate": "2024-12-31",
+      "dealWinningProbability": "80%",
+      "dealStage": "Negotiation",
+      "remark": "Promising deal",
+      "action": "View"
+    },
+    {
+      "opportunityId": "1041096",
+      "accountName": "Toyota Workplace Suite",
+      "assetName": "Infosys Workplace Suite",
+      "mco": "Abhijith Chatterjee",
+      "ih": "Ruchir Budhwar",
+      "revenue": "0.08",
+      "expectedClosureDate": "2024-11-15",
+      "dealWinningProbability": "60%",
+      "dealStage": "Proposal",
+      "remark": "Needs follow-up",
+      "action": "Edit"
+    }
+  ]

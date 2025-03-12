@@ -1,0 +1,32 @@
+{
+    "assetAdoption": [
+      {
+        "accountName": "ABB Information S",
+        "assetName": "Infosys Digital Tran...",
+        "MCO": "Subhojit Tagoor",
+        "IHRH": "Manoj Prabhakar",
+        "dealClosureQuarter": "Q2-25",
+        "assetRevenue": 0.31,
+        "inFocus": true
+      },
+      {
+        "accountName": "Airbus France",
+        "assetName": "IDW (Infosys Data...",
+        "MCO": "Aurelien Samuel J...",
+        "IHRH": "Rachita Dwivedi",
+        "dealClosureQuarter": "Q2-25",
+        "assetRevenue": 0.08,
+        "inFocus": true
+      },
+      {
+        "accountName": "Arcelor Mittal",
+        "assetName": "HANA CMO",
+        "MCO": "Abhijith Chatterjee",
+        "IHRH": "Rachita Dwivedi",
+        "dealClosureQuarter": "Q2-25",
+        "assetRevenue": 0.02,
+        "inFocus": true
+      }
+    ]
+  }
+  
